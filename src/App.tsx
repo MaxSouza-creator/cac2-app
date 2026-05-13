@@ -549,12 +549,7 @@ export default function App() {
             ...sB, width: "100%", padding: 14, fontSize: 16, marginTop: 8, borderRadius: 12, marginRight: 0,
           }}>Entrar</button>
 
-          <div style={{ marginTop: 20, fontSize: 11, opacity: 0.6, textAlign: "center" }}>
-            Usuarios de teste:<br />
-            admin@adeste.com.br / 123456<br />
-            gerente@adeste.com.br / 123456<br />
-            solicitante@adeste.com.br / 123456
-          </div>
+         
         </div>
       </div>
     );
