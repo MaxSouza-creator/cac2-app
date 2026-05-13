@@ -1,0 +1,55 @@
+:root{
+   --ad-verde: #2CD5C4;
+  --ad-azul-petroleo: #0097A9;
+  --ad-vermelho: #EF3340;
+
+  --ad-verde-claro: #9CDBD9;
+  --ad-azul-petroleo-escuro: #007B93;
+  --ad-vermelho-escuro: #C53437;
+
+  --ad-azul-medio: #6DCFF6;
+  --ad-azul-claro: #9DDCF9;
+  --ad-vermelho-claro: #F2665E;
+
+  --ad-preto: #000000;
+  --ad-cinza-escuro: #4D4D4F;
+  --ad-cinza-medio: #808285;
+
+  /* === Tema === */
+  --bg: #07121a; /* fundo bem escuro puxando pro azul petróleo */
+  --card: rgba(255,255,255,0.06);
+  --card2: rgba(255,255,255,0.04);
+  --stroke: rgba(255,255,255,0.12);
+  --stroke2: rgba(255,255,255,0.08);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+
+  --primary: var(--ad-azul-petroleo);
+  --primary2: var(--ad-azul-petroleo-escuro);
+  --success: var(--ad-verde);
+  --danger: var(--ad-vermelho);
+  --warn: var(--ad-vermelho-claro);
+}
+
+*{ box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(0,151,169,0.22), transparent 60%),
+              radial-gradient(900px 500px at 80% 20%, rgba(44,213,196,0.12), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  /* Fonte: tenta DIN, se não tiver vai pra Trebuchet */
+  font-family: "DIN", "DIN Alternate", "Trebuchet MS", "Segoe UI", Arial, system-ui, -apple-system, sans-serif;
+}
+
+a { color: inherit; }
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+::selection{
+  background: rgba(0,151,169,0.35);
+}
